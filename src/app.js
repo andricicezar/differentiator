@@ -5,7 +5,7 @@ import Tabs from './components/tabs/tabs.js';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="d-flex flex-column" style={{height: "100vh"}}>
         <Result />
 
         <Tabs />

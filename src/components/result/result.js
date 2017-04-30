@@ -30,7 +30,7 @@ class Result extends React.Component {
   render() {
     return (
       <div className="jumbotron" onClick={this.props.mode === "static" && this.props.toggleMode}>
-        <h4 className="display-4">
+        <h4 className={`display-4 result ${this.props.mode}`}>
           {this.props.mode === "static"
             ? renderStaticMode(this.props.result)
             : renderEditMode(this.props.result, this.onEdit)}
